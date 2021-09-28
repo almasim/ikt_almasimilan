@@ -1,7 +1,8 @@
 <h5>Regisztráció</h5>
 <form action="">
- 
-<label for="felh">Felhasználónév:</label>   <br>    
+    <label for="fn">Teljesnév:</label>   <br>    
+    <input type="text" names="fn"><br>
+    <label for="felh">Felhasználónév:</label>   <br>    
     <input type="text" names="felh"><br>
     <label for="pw">Jelszó:</label> <br> 
     <input type="text" name="pw"> <br>  
