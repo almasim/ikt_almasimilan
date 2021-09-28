@@ -1,0 +1,36 @@
+body{
+    background-color: #38023B;
+}
+.head{
+    padding: 25px;
+    background-color: #A288E3;
+    
+}
+.right{
+    
+    background-color: #BBD5ED;
+    
+    text-align: center;
+}
+.left{
+   
+    text-align: center;
+   
+    background-color: #CEFDFF;
+}
+.foot{
+    text-align: center;
+    background-color: #CCFFCB;
+    padding: 15px;
+}
+.forma{
+    padding: 40px 40px 15px 40px;
+}
+#gomb{
+    
+    text-decoration: none;
+    transition: 0.3s;
+}
+#gomb:hover{
+    text-decoration: none;
+}
