@@ -113,11 +113,13 @@ class RegCheck extends Forms{
             while($row = $result->fetch_assoc()) {
               if($row["uname"]==$name){
 
-                print("Már van ilyen név");
+                echo "Már van ilyen név";
+                break;
             }
             else{
                 if (mysqli_query($c->getConn(), $sql)) {
                     echo "Új rekord felöltése sikeres volt.";
+                    header('location:index.php');
                   } else {
                     echo "Error: " . $sql . "<br>" . mysqli_error($c->getConn());
                   }
@@ -129,7 +131,7 @@ class RegCheck extends Forms{
 
           
         mysqli_close($c->getConn());
-        header('location:index.php');
+        
     }
 }
 
