@@ -109,7 +109,7 @@ class RegCheck extends Forms{
         $ql="SELECT `uname` FROM `users` WHERE  uname ='".$this->getUName()."'";
         $c=new Connection();
         $result=mysqli_query($c->getConn(),$ql);
-        if ($result->num_rows > 0) {
+        
             while($row = $result->fetch_assoc()) {
               if($row["uname"]==$name){
 
@@ -117,16 +117,9 @@ class RegCheck extends Forms{
                 break;
             }
             else{
-                if (mysqli_query($c->getConn(), $sql)) {
-                    echo "Új rekord felöltése sikeres volt.";
+                mysqli_query($c->getConn(), $sql);
                     header('location:index.php');
-                  } else {
-                    echo "Error: " . $sql . "<br>" . mysqli_error($c->getConn());
-                  }
             }
-            }
-          } else {
-            echo "0 results";
           }
 
           
